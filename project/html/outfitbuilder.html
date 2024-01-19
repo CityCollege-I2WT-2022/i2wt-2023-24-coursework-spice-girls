@@ -1,0 +1,267 @@
+<head>
+  <title>vie a la mode</title>
+  <link href='https://fonts.googleapis.com/css?family=Bodoni Moda' rel='stylesheet'>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    .mySlides1,
+    .mySlides2,
+    .mySlides3 {
+      display: none
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 200px;
+      position: relative;
+      margin: auto;
+    }
+
+    .prev {
+      position: absolute;
+      left: 0;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a grey background color */
+    .prev:hover,
+    .next:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+
+    .all {
+      display: block;
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- header -->
+  <div class="nav" style="display: flex; justify-content: space-evenly; height: 95px;">
+    <a href="about.html" class="header-link">ABOUT</a>
+    <a href="../index.html" class="header-t-link">VIE A LA MODE</a>
+    <a href="contact.html" class="header-link">CONTACT</a>
+  </div>
+  <div class="ribbon">
+    <div class="sliding-text-container">
+      <div class="sliding-text">
+        <a href="outfitbuilder.html" style="margin-top: 10px; text-decoration: none; color: #f3efe4;">Outfit builder</a>
+        <a href="trendingnow.html" style="margin-top: 10px; text-decoration: none; color: #f3efe4;">Trending now!</a>
+        <a href="top-page.html" style="margin-top: 10px; text-decoration: none; color: #f3efe4;">Tops</a>
+        <a href="bottom-page.html" style="margin-top: 10px; text-decoration: none; color: #f3efe4;">Bottoms</a>
+        <a href="bag-page.html" style="margin-top: 10px; text-decoration: none; color: #f3efe4;">Bags</a>
+      </div>
+    </div>
+  </div>
+
+  <!----content-->
+  <p style="text-align: center;">TOPS:</p>
+  <div class="slideshow-container">
+    <div class="mySlides1">
+      <img src="../photos/graphic t shirt.jpg" class="tp-img" style="max-width: 200px;">
+    </div>
+
+    <div class="mySlides1">
+      <img src="../photos/greyblouse.jpg" class="tp-img" style="max-width: 200px;">
+    </div>
+
+    <div class="mySlides1">
+      <img src="../photos/blazer.png" class="tp-img" style="max-width: 200px;">
+    </div>
+
+    <div class="mySlides1">
+      <img src="../photos/ruffle.png" class="tp-img" style="max-width: 200px;">
+    </div>
+
+    <div class="mySlides1">
+      <img src="../photos/whithshirt.png" class="tp-img" style="max-width: 200px;">
+    </div>
+
+    <div class="mySlides1">
+      <img src="../photos/sweatshirt.jpg" class="tp-img" style="max-width: 200px;">
+    </div>
+    <div class="mySlides1">
+      <img src="../photos/plaid shirt.png" class="tp-img" style="max-width: 200px;">
+    </div>
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  </div>
+
+  <p style="text-align: center; margin: 2%;">BOTTOMS:</p>
+  <div class="slideshow-container" style="text-align: center;">
+    <div class="mySlides2">
+      <img src="../photos/light_blue_jeans.jpg" style="max-width: 200px;" class="bt-img">
+    </div>
+
+    <div class="mySlides2">
+      <img src="../photos/black denim jeans.png" style="max-width: 200px;" class="bt-img">
+    </div>
+
+    <div class="mySlides2">
+      <img src="../photos/black leather pants.jpg" style="max-width: 200px;" class="bt-img">
+    </div>
+
+    <div class="mySlides2">
+      <img src="../photos/pleated_skirt.jpg" style="max-width: 200px;" class="bt-img">
+    </div>
+
+    <div class="mySlides2">
+      <img src="../photos/miniskirt.jpg" style="max-width: 200px;" class="bt-img">
+    </div>
+
+    <div class="mySlides2">
+      <img src="../photos/beige-skirt.jpg" style="max-width: 200px; height: auto;" class="bt-img">
+    </div>
+
+    <div class="mySlides2">
+      <img src="../photos/leather-skirt.jpg" style="max-width: 200px;" class="bt-img">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+  </div>
+
+
+  <div class="col-md-10" style="display: flex; max-width: 100%; margin-left: auto; margin-right: auto; margin-top: 2%;">
+    <div style="display: block; margin-left: 5%;">
+      <button class="button" type="button"
+        style="background-color: #4B0000; color: #f3efe4; width: 150px; height: 50px;">Shuffle for bottoms</button>
+      <br /><br />
+      <div class="rndmImage" style="width: 200px;"></div>
+    </div>
+    <div style="display: block; max-width: 200px; margin-left: 35%;">
+      <button class="button1" type="button" onclick="start1()"
+        style="background-color: #4B0000; color: #f3efe4; width: 150px; height: 50px;">Shuffle for tops</button>
+      <br /><br />
+      <div class="rndmImage1" style="width: 100px;"></div>
+    </div>
+  </div>
+  <script>
+
+    window.addEventListener('load', start, false);
+
+    function start() {
+      var butt = document.getElementsByTagName('button')[0];
+      var rnImg = document.getElementsByClassName('rndmImage')[0]; //Change selector to existing class and select the first (the only) one
+      var pictures = document.getElementsByClassName('bt-img');
+      butt.addEventListener('click', spc, false);
+
+      function spc(e) {
+        var choose = Math.floor(Math.random() * pictures.length); //better move this line inside this function to get rundom image every button clicks
+
+        var img = document.createElement('img'); //creates new img tag
+        img.src = pictures[choose].src;
+        rnImg.innerHTML = ''; //to delete previous image
+        rnImg.appendChild(img);
+
+      }
+    }
+
+
+    window.addEventListener('load', start, false);
+
+    function start1() {
+      var butt = document.getElementsByClassName('button1')[0];
+      var rnImg = document.getElementsByClassName('rndmImage1')[0]; //Change selector to existing class and select the first (the only) one
+      var pictures = document.getElementsByClassName('tp-img');
+
+      butt.addEventListener('click', spc1, false);
+
+      function spc1(e) {
+        var choose = Math.floor(Math.random() * pictures.length); //better move this line inside this function to get rundom image every button clicks
+
+        var img = document.createElement('img'); //creates new img tag
+        img.src = pictures[choose].src;
+        rnImg.innerHTML = ''; //to delete previous image
+        rnImg.appendChild(img);
+
+      }
+    }
+  </script>
+
+
+  <script>
+    let slideIndex = [1, 1, 1];
+    let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+      let i;
+      let x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) { slideIndex[no] = 1 }
+      if (n < 1) { slideIndex[no] = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex[no] - 1].style.display = "block";
+    }
+  </script>
+  <!-- footer -->
+
+  <footer style="background-color: #4B0000; color: white; padding: 6%; text-align: center;">
+    <div class="ft" style="display: grid; grid-template-columns: auto auto auto; text-align: center;">
+      <a href="../index.html" class="footer-link">
+        <div>Home</div>
+      </a>
+      <a href="top-page.html" class="footer-link">
+        <div>Tops</div>
+      </a>
+      <div style="color: #4B0000;" class="footer-link">contact</div>
+      <a href="about.html" class="footer-link">
+        <div>About us</div>
+      </a>
+      <a href="bottom-page.html" class="footer-link">
+        <div>Bottoms</div>
+      </a>
+      <div class="footer-link">The spice girls</div>
+      <a href="contact.html">
+        <div class="footer-link">Contact us</div>
+      </a>
+      <a href="bag-page.html" class="footer-link">
+        <div>Bags</div>
+      </a>
+      <div class="footer-link">Vie a la mode</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
